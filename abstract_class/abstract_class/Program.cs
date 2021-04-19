@@ -80,20 +80,25 @@ namespace abstract_class
              {
                 Token token = new Token();
                 int count = 0;
-                int currentpos = 0;
+             
                 token.value = "";
-                token.type = "int";
+                token.type = "Integer";
                 token.poition = t.currentPosition;
                 token.lineNumber = t.lineNumber;
 
                 while (t.hasMore() && (char.IsDigit(t.peek())|| t.peek()=='.' || t.peek() == 'f' ) )
                 {
-                    if(t.peek() == '.' || t.peek() == 'f')
+                    
+                    if (t.peek() == '.' || t.peek() == 'f')
                     {
                         token.type = "float";
                         count++;
-                        token.value += t.next();
+                        if (count == 3)
+                        {
+                            return null;
+                        }
                     }
+                  
                     if (t.peek() == 'f')
                     {
                         if(t.peek(2) != ' ')
@@ -101,14 +106,16 @@ namespace abstract_class
                             return null;
                         }
                     }
-                    if (count < 2)
-                    {
+                    
                         token.value += t.next();
-                        
 
-                    }
-                   
                 }
+                Char lastchar = token.value[token.value.Length -1];
+                if (lastchar != 'f' && token.type == "float")
+                {
+                    token.value += 'f' ;
+                }
+
                 return token;
              }
         }
@@ -234,11 +241,9 @@ namespace abstract_class
                         }
                         else
                         {
-                            
                             return null;
                         }
-                     
-
+ 
                     }
                     token.value += t.next();
                     
@@ -248,8 +253,6 @@ namespace abstract_class
                         break;
                     }
                 }
-
-
                 return token;
             }
         }
@@ -259,7 +262,7 @@ namespace abstract_class
 
         static void Main(string[] args)
         {
-            Tokenizer t = new Tokenizer("#vjdnkd 20 20.12f 19 if  _jdc_nkjd  20f @Abdulrahman <to> hhh  </to> jjj ");
+            Tokenizer t = new Tokenizer("#vjdnkd 20 20.12f hhh aaaf 19 if  _jdc_nkjd  20f @Abdulrahman <to> hhh  </to> jjj ");
             Tokenizable[] handers = new Tokenizable[] { new xmlTokenizable(),new IntOrfloatTokenizer(),new WhiteSpace(),new idTokenizer(),new hachTokenizable(),new userTokenizable() };
             Token token = t.tokenize(handers);
             while(token != null)
