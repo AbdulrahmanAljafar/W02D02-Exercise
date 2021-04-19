@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\abdul\\OneDrive\\سطح المكتب\\tuwaiq .net\\abstract_class\\abstract_class\\abstract_class.csproj": {}
+    "C:\\Users\\abdul\\OneDrive\\سطح المكتب\\tuwaiq .net\\W02D02-Exercise\\abstract_class\\abstract_class\\abstract_class.csproj": {}
   },
   "projects": {
-    "C:\\Users\\abdul\\OneDrive\\سطح المكتب\\tuwaiq .net\\abstract_class\\abstract_class\\abstract_class.csproj": {
+    "C:\\Users\\abdul\\OneDrive\\سطح المكتب\\tuwaiq .net\\W02D02-Exercise\\abstract_class\\abstract_class\\abstract_class.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\abdul\\OneDrive\\سطح المكتب\\tuwaiq .net\\abstract_class\\abstract_class\\abstract_class.csproj",
+        "projectUniqueName": "C:\\Users\\abdul\\OneDrive\\سطح المكتب\\tuwaiq .net\\W02D02-Exercise\\abstract_class\\abstract_class\\abstract_class.csproj",
         "projectName": "abstract_class",
-        "projectPath": "C:\\Users\\abdul\\OneDrive\\سطح المكتب\\tuwaiq .net\\abstract_class\\abstract_class\\abstract_class.csproj",
+        "projectPath": "C:\\Users\\abdul\\OneDrive\\سطح المكتب\\tuwaiq .net\\W02D02-Exercise\\abstract_class\\abstract_class\\abstract_class.csproj",
         "packagesPath": "C:\\Users\\abdul\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\abdul\\OneDrive\\سطح المكتب\\tuwaiq .net\\abstract_class\\abstract_class\\obj\\",
+        "outputPath": "C:\\Users\\abdul\\OneDrive\\سطح المكتب\\tuwaiq .net\\W02D02-Exercise\\abstract_class\\abstract_class\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\abdul\\AppData\\Roaming\\NuGet\\NuGet.Config",
